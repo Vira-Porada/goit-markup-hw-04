@@ -300,6 +300,7 @@ img {
 
 .team-section .list {
   display: flex;
+  justify-content: center;
   padding: 0;
   margin: 0;
   margin-right: -30px;
@@ -326,29 +327,93 @@ img {
   background-color: var(--background-colour);
 }
 
-.social-links {
+.social-icons {
+  display: inline-flex;
+}
+
+.social-icons .icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--main-text-colour);
+}
+
+.social-icons-item + .social-icons-item {
+  margin-left: 10px;
+}
+
+.social-icons-link {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 
-.social-links .item {
-  flex-basis: calc(100% / 4 - 10px);
+.social-icons-link:hover {
+  background-color: var(--accent-colour);
 }
 
-.social-links .link {
-  display: block;
+.social-icons-link:hover .icon,
+.social-icons-link:focus .icon {
+  fill: var(--ligth-text-colour);
 }
+
+.clients-list {
+  display: flex;
+ }
+
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-section .title {
+ font-weight: 700;
+ font-size: 36px;
+ line-height: 1.16;
+ text-align: center;
+ letter-spacing: 0.03em;
+ text-align: center;
+ color: var(--title-colour);
+ margin-bottom: 50px;
+}
+
+.clients-link {
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-list .item {
+flex-basis: calc(100%/6 - 30px);
+}
+
+.icon {
+fill: #afb1b8
+}
+
 
 footer {
   background-color: var(--dark-bg-colour);
-}
+ }
 
-footer {
-  padding-top: 60px;
+ .footer-block {
+   display: flex;
+   padding-top: 60px;
   padding-bottom: 60px;
+ }
+
+.adress-block {
+  flex-basis: calc(50% - 45px) / 2);
+  
 }
 
-.footer .logo {
+.footer-block .logo {
   display: block;
   margin-bottom: 20px;
 }
@@ -369,6 +434,37 @@ footer {
 .adress-link.link:hover,
 .adress-link.link:focus {
   color: var(--accent-colour);
+}
+
+.footer-links {
+  display: flex;
+  flex-basis: calc(50% - 45px) /2);
+}
+
+.footer-links .social-icons {
+  display: inline-flex;
+}
+
+.footer-links .social-icons .icon {
+  width: 12px;
+  height: 12px;
+  fill: var(--ligth-text-colour);
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.sign-in {
+  display: flex;
+  flex-basis: calc(50% - 15px);
+
 }
 
 .button {
