@@ -264,8 +264,10 @@ img {
   display: flex;
   background-size: contain;
   height: 120px;
+  width: 270px;
   content: '';
   background-repeat: no-repeat;
+  background-size: 70px 70px;
   background-position: center;
   background-color: #f5f4fa;
 }
